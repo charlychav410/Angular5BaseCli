@@ -2,5 +2,8 @@
   <h1>Main
 
   </h1>
-<app-git-hub-card></app-git-hub-card>
+  <app-search-user (onSearchUser)="onSearchUser($event)"></app-search-user>
+<app-git-hub-card *ngFor="let gitHubData of gitHubDataList" [github-data]="gitHubData"
+(click)="onUserClick()"></app-git-hub-card>
+
 </div>
