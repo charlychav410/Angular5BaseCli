@@ -24,6 +24,7 @@ import { PasivoComponent } from './pasivo/pasivo.component';
 import { ReactivoComponent } from './reactivo/reactivo.component';
 import { LoginComponent } from './login/login.component';
 import {PadreComponent} from './padre/padre.component';
+import {MatSelectModule} from '@angular/material/select';
 
 export const MATERIAL_COMPONENTS = [
   MatToolbarModule,
@@ -33,7 +34,7 @@ export const MATERIAL_COMPONENTS = [
   MatIconModule,
   MatInputModule,
   MatProgressBarModule,
-  
+  MatSelectModule
 ]
 
 @NgModule({
@@ -47,7 +48,7 @@ export const MATERIAL_COMPONENTS = [
     PasivoComponent,
     ReactivoComponent,
     LoginComponent,
-    PadreComponent
+    PadreComponent,
   ],
   imports: [
     BrowserModule,

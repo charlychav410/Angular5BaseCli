@@ -5,5 +5,14 @@
   <app-search-user (onSearchUser)="onSearchUser($event)"></app-search-user>
 <app-git-hub-card *ngFor="let gitHubData of gitHubDataList" [github-data]="gitHubData"
 (click)="onUserClick()"></app-git-hub-card>
+</div>
+<div>
+<mat-form-field>
+  <mat-select placeholder="Favorite food">
+    <mat-option *ngFor="let food of foods" [value]="food.value">
+      {{ food.viewValue }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
 
 </div>
