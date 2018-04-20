@@ -1,11 +1,20 @@
 <mat-card class="component-login" >
-   <div class="usr">user</div>
+  <!-- <div class="usr">user</div>
     <input type="text" [(ngModel)]="user"/>
     <div class="pas">password</div>
-    <input type="text" [(ngModel)]="password"/>
+    <input type="text" [(ngModel)]="password"/> -->
  
+    <form class="component-form">
+      <mat-form-field class="component-full-width">
+        <input matInput placeholder="user" #user1>
+      </mat-form-field>
     
+      <mat-form-field class="component-full-width">
+        <textarea matInput placeholder="password" #password1 ></textarea>
+      </mat-form-field>
+    </form>
+
     <div class="but">   
-    <button mat-raised-button color="primary" (click)="loginbutton()" >Login</button>
+    <button mat-raised-button color="primary" (click)="loginbutton(user1.value, password1.value)" >Login</button>
     </div>
   </mat-card>
