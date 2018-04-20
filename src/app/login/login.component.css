@@ -24,7 +24,17 @@
 }
 
 .but{
-    margin-block-start: 20px;
-    margin-left: 60px;
+    margin-block-start: 10px;
+    margin-left: 50px;
     
 }
+
+.component-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .component-full-width {
+    width: 100%;
+  }
