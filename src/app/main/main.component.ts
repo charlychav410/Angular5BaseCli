@@ -31,6 +31,6 @@ export class MainComponent implements OnInit {
 });
   }
   onUserClick(evento:GitHubModel){ 
-    this.gitHubDataList = this.gitHubDataList.filter(value => value != evento);
+    this.gitHubDataList = this.gitHubDataList.filter(value => {value= evento});
   }
 }

@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-
+import {LoginComponent} from './login/login.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -25,5 +25,9 @@ export const routes: Routes = [
   { 
     path: 'contact', 
     component: ContactComponent 
+  },
+  { 
+    path: 'login', 
+    component: LoginComponent 
   }
 ];
