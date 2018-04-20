@@ -1,0 +1,30 @@
+.component-login{
+    border: 1px solid black;
+    width: 173px;
+    height: 173px;
+    margin: 50px;
+     
+}
+
+.usr{
+    align-content: center;
+    margin-left: 55px;
+    margin-block-start: 5px;
+    font-size: 25px;
+    font-style: inherit;
+}
+
+.pas{
+    align-content: center;
+    margin: 5px;
+    margin-block-start: 10px;
+    font-size: 25px;
+    font-style: inherit;
+    margin-left: 28px;
+}
+
+.but{
+    margin-block-start: 20px;
+    margin-left: 60px;
+    
+}

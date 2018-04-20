@@ -3,14 +3,22 @@ import { Subject } from 'rxjs';
 
 @Injectable()
 export class LoginService {
-  private user=new Subject<string>();
-  private password=new Subject<string>();
+
   constructor() { }
 
-evaluaUser(newUser:string, newPassword:string){
-    return (this.password.next(newPassword)===this.user.next(newUser));
+evaluaUser(user:string, password:string){
+ 
+    if(user==='Carlos'&& password === '123'){
+      return 'true'
+    }
+    else{
+      return 'false'
+    }
+
+  }
+
 }
 
 
 
-}
+
