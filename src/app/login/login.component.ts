@@ -25,7 +25,7 @@ loginbutton(user1:string, password1:string){
    
     this.validar = this._loginService.evaluaUser(this.user=user1, this.password=password1);    
         if(this.validar ==='true'){
-            this._router.navigate(['']);
+            this._router.navigate(['contact']);
         }
         else{
             alert('Datos equivocados');
