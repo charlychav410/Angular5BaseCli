@@ -14,10 +14,11 @@ import { NgModel } from "@angular/forms";
 
 
 export class LoginComponent implements OnInit{
-user:string;
-password:string;
-private validar;
-constructor (private _loginService:LoginService, private _router:Router){}
+  fixture: any;
+public user:string;
+public password:string;
+public validar;
+constructor (public _loginService:LoginService, public _router:Router){}
 
 ngOnInit(){}
 

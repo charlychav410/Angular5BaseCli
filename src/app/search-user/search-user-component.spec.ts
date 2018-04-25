@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { APP_PROVIDERS } from '../app.providers';
 import { GitHubModel } from "../model/git-hub-model";
 import { SearchUserComponent } from './search-user.component';
+import { GitHubService } from '../services/gut-hub.service';
+import { GitHubServiceMock } from '../../mock-services/gut-hub.service.mock';
 
 describe('SearchUserComponent', () => {
   let component: SearchUserComponent;
@@ -14,7 +16,8 @@ describe('SearchUserComponent', () => {
 
       declarations: [ SearchUserComponent ],
       imports: [FormsModule],
-      providers:[APP_PROVIDERS]
+      providers:[{provide: GitHubService,
+                  useClass: GitHubServiceMock}]
     })
     .compileComponents();
   }));

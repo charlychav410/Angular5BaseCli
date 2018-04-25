@@ -36,4 +36,12 @@ describe('MainComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('should add three elements to card array',()=>{
+    expect(component.gitHubDataList.length).toEqual(0);
+    component.onSearchUser('charlychav410');
+    component.onSearchUser('charlychav410');
+    component.onSearchUser('charlychav410');
+    expect(component.gitHubDataList.length).toEqual(0);
+  })
+
 });
