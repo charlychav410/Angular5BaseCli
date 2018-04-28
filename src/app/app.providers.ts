@@ -3,6 +3,7 @@ import { ConsumeService } from "./services/consume.service";
 import{GitHubService} from"./services/gut-hub.service";
 import { ColorService } from './services/color.service';
 import { LoginService } from './services/login.service';
+import {ExamenService} from './services/examen.service';
 
 
 export const APP_PROVIDERS = [
@@ -11,5 +12,6 @@ export const APP_PROVIDERS = [
     GitHubService,
     ColorService,
     LoginService,
+    ExamenService
     
 ];

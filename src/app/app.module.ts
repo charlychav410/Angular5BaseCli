@@ -26,7 +26,7 @@ import { LoginComponent } from './login/login.component';
 import {PadreComponent} from './padre/padre.component';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCardModule} from '@angular/material/card';
-
+import{ExamenComponent} from'./examen/examen.component';
 
 export const MATERIAL_COMPONENTS = [
   MatToolbarModule,
@@ -46,12 +46,14 @@ export const MATERIAL_COMPONENTS = [
     MainComponent,
     AboutComponent,
     ContactComponent,
+    ExamenComponent,
     GitHubCardComponent,
     SearchUserComponent,
     PasivoComponent,
     ReactivoComponent,
     LoginComponent,
     PadreComponent,
+    
   ],
   imports: [
     BrowserModule,

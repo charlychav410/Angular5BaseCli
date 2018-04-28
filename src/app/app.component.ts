@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 //import { LoginComponent } from './login/login.component';
 import { PadreComponent } from './padre/padre.component';
+import { ExamenComponent } from './examen/examen.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -30,7 +31,10 @@ export const routes: Routes = [
   { 
     path: 'padre',
     component : PadreComponent 
- //   path: 'login', 
-   // component: LoginComponent 
-  }
+  },
+  { 
+    path: 'examen',
+    component : ExamenComponent 
+  },
+ 
 ];

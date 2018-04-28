@@ -5,8 +5,10 @@ import { Subject } from 'rxjs';
 export class LoginService {
 
   constructor() { }
+public user: string;
+public password: string;
 
-evaluaUser(user:string, password:string){
+public evaluaUser(user:string, password:string){
  
     if(user==='Carlos'&& password === '123'){
       return 'true'
@@ -15,7 +17,6 @@ evaluaUser(user:string, password:string){
       return 'false'
     }
   }
-
 }
 
 

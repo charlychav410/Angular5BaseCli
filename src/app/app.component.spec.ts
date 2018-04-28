@@ -17,6 +17,8 @@ import { MainComponent } from './main/main.component';
 import { FormsModule } from '@angular/forms';
 import { APP_PROVIDERS } from './app.providers';
 import{MATERIAL_COMPONENTS} from "./app.module";
+import{ExamenComponent}from './examen/examen.component';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -25,6 +27,7 @@ describe('AppComponent', () => {
         PasivoComponent,
         ReactivoComponent,
         LoginComponent,
+        ExamenComponent,
         MainComponent,
         GitHubCardComponent,
         ContactComponent,

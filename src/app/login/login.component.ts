@@ -14,6 +14,7 @@ import { NgModel } from "@angular/forms";
 
 
 export class LoginComponent implements OnInit{
+  gitHubData: LoginService;
   fixture: any;
 public user:string;
 public password:string;
@@ -22,10 +23,11 @@ constructor (public _loginService:LoginService, public _router:Router){}
 
 ngOnInit(){}
 
-loginbutton(user1:string, password1:string){
+loginbutton(user1, password1 ){
    
     this.validar = this._loginService.evaluaUser(this.user=user1, this.password=password1);    
-        if(this.validar ==='true'){
+    console.log(this.user);    
+    if(this.validar ==='true'){
             this._router.navigate(['contact']);
         }
         else{
